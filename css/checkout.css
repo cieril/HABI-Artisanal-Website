@@ -1,0 +1,225 @@
+/* Poppins, Bellota  */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bukhari Script */
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+/* Harlow Solid Italic */
+@import url('https://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+/* Baybayin */
+@import url('https://fonts.cdnfonts.com/css/baybayin-tayo-handwriting-b30');
+
+/* Tilt Neon */
+@import url('https://fonts.cdnfonts.com/css/tilt-neon');
+
+:root {
+   --red-100: #fae8e8;
+   --red-200: #f0b9b9;
+   --red-300: #e68a8a;
+   --red-400: #dc5b5b;
+   --red-500: #d22d2d;
+   --red-600: #a42323;
+   --red-700: #751919;
+   --red-800: #460f0f;
+   --red-900: #170505;
+   --green-100: #f1f4ee;
+   --green-200: #d6ddcc;
+   --green-300: #bbc6aa;
+   --green-400: #a0af88;
+   --green-500: #859966;
+   --green-600: #67774f;
+   --green-700: #4a5539;
+   --green-800: #2c3322;
+   --green-900: #0f110b;
+   --cream-100: #fff5ea;
+   --cream-200: #ffd7aa;
+   --cream-300: #FFECD5;
+   --grey-100: #d4d4d4;
+   --grey-200: #b8b8b8;
+   --black: #31363F;
+   --blue: #4285f4;
+   --yellow: #f7c566;
+   --harlow: "Harlow Solid Italic", sans-serif;
+   --tilt: "Tilt Neon", sans-serif;
+   --poppins: "Poppins", sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.checkout_main_container {
+    display: grid;
+    grid-template-areas:    
+            "form order"
+    ;
+    column-gap: 40px;
+    border: 1px solid var(--black);
+    border-radius: 6px;
+}
+
+.form_container {
+    grid-area: form;
+    padding: 40px;
+}
+
+.form_title p {
+    font-size: 30px;
+    font-family: var(--tilt);
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.form_inputs label {
+    font-size: 18px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.form_inputs {
+    margin-bottom: 20px;
+}
+
+.form_inputs input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: var(--tilt);
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    background-color: transparent;
+}
+
+small {
+    font-size: 16px;
+    color: var(--red-700);
+    font-size: var(--tilt);
+}
+
+.form_image label {
+    font-size: 18px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.form_image input {
+    border: 1px solid var(--black);
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-family: var(--tilt);
+    margin-bottom: 10px;
+}
+
+.form_image p {
+    font-family: var(--tilt);
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.form_inputs textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: var(--tilt);
+    color: var(--black);
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.order_details_container {
+    grid-area: order;
+    padding: 40px;
+}
+
+.orders_container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--black);
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.order_details_title {
+    font-size: 30px;
+    font-family: var(--tilt);
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.order_image img {
+    width: 100px;
+    aspect-ratio: 4 / 4;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.order_title {
+    font-size: 20px;
+    font-family: var(--tilt);
+    margin-right: 80px;
+    color: var(--black);
+}
+
+.order_price p {
+    font-size: 20px;
+    font-family: var(--tilt);
+    margin-right: 80px;
+    color: var(--black);
+}
+
+.order_qty {
+    font-size: 20px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.total_price p {
+    font-size: 25px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.total_price span {
+    font-weight: bold;
+    float: right;
+}
+
+.total_note {
+    font-size: 15px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.checkout_button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.checkout_button .cod {
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--tilt);
+    margin-bottom: 15px;
+    background-color: var(--blue);
+    color: var(--cream-100);
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    cursor: pointer;
+}

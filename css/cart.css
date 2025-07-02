@@ -1,0 +1,274 @@
+/* Poppins, Bellota  */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bukhari Script */
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+/* Harlow Solid Italic */
+@import url('https://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+/* Baybayin */
+@import url('https://fonts.cdnfonts.com/css/baybayin-tayo-handwriting-b30');
+
+/* Tilt Neon */
+@import url('https://fonts.cdnfonts.com/css/tilt-neon');
+
+:root {
+   --red-100: #fae8e8;
+   --red-200: #f0b9b9;
+   --red-300: #e68a8a;
+   --red-400: #dc5b5b;
+   --red-500: #d22d2d;
+   --red-600: #a42323;
+   --red-700: #751919;
+   --red-800: #460f0f;
+   --red-900: #170505;
+   --green-100: #f1f4ee;
+   --green-200: #d6ddcc;
+   --green-300: #bbc6aa;
+   --green-400: #a0af88;
+   --green-500: #859966;
+   --green-600: #67774f;
+   --green-700: #4a5539;
+   --green-800: #2c3322;
+   --green-900: #0f110b;
+   --cream-100: #fff5ea;
+   --cream-200: #ffd7aa;
+   --cream-300: #FFECD5;
+   --grey-100: #d4d4d4;
+   --grey-200: #b8b8b8;
+   --black: #31363F;
+   --blue: #4285f4;
+   --yellow: #f7c566;
+   --harlow: "Harlow Solid Italic", sans-serif;
+   --tilt: "Tilt Neon", sans-serif;
+   --poppins: "Poppins", sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* .cart_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+} */
+
+.cart_items_wrapper {
+    border: 2px solid var(--green-700);
+    border-radius: 3px;
+    height: 500px;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.cart_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cart_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cart_product_img img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    background-color: var(--cream-300);
+    border-radius: 6px;
+    border: 1px solid var(--yellow);
+    cursor: pointer;
+}
+
+.cart_product_name p {
+    margin: 0px 200px 0px 100px;
+    font-family: var(--tilt);
+    font-size: 25px;
+    color: var(--black);
+}   
+
+.cart_product_price p {
+    margin-right: 120px;
+    font-family: var(--tilt);
+    font-size: 25px;
+    color: var(--green-600);
+}
+
+.cart_product_quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-right: 50px;
+}
+
+.cart_product_quantity p {
+    margin: 0px 20px;   
+    font-family: var(--tilt);
+    font-size: 20px;
+    color: var(--black);
+}
+
+.cart_product_quantity .plus {
+    background-color: var(--green-600);
+    border-radius: 3px;
+    border: 1px solid var(--green-600);
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 100px;
+    cursor: pointer;
+    color: var(--cream-100);
+}
+
+.cart_product_quantity .minus {
+    background-color: var(--red-600);
+    border-radius: 3px;
+    border: 1px solid var(--red-600);
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--cream-100);
+}
+
+.deleteItem {
+    padding: 10px 20px;
+    border: 1px solid var(--red-600);
+    border-radius: 6px;
+    background-color: var(--red-600);
+    color: var(--cream-100);
+    cursor: pointer;
+    font-family: var(--tilt);
+}
+
+.cart_product_quantity input {
+    height: 35px;
+    text-align: center;
+    width: 60px;
+    font-family: var(--tilt);
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.checkout p {
+    background-color: var(--yellow);
+    text-align: center;
+    width: 10%;
+    float: right;
+    color: var(--black);
+    font-family: var(--tilt);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.cart_product_button .trash {
+    color: var(--red-600);
+    font-size: 20px ;
+    cursor: pointer;
+}
+
+.cart_hr {
+    border: 1px solid var(--green-700);
+}   
+
+.cart_summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-left: 25px;
+}
+
+.cart_summary_form {
+    width: 80%;
+    background-color: var(--cream-300);
+    border: 2px solid var(--green-700);
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.cart_summary_location {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cart_summary_location p {
+    font-size: 18px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.cart_summary_location p:first-child {
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.cart_summary_hr {
+    margin: 20px 0px;
+    border: 1px solid var(--green-700);
+}
+
+.cart_summary_title {
+    font-size: 22px;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.cart_summary_order_subtotal, .cart_summary_shipping_fee, .cart_summary_subtotal {
+    font-size: 18px;
+    font-family: var(--tilt);
+    color: var(--black);
+    margin: 15px 0px;
+}
+
+.cart_summary_order_subtotal, .cart_summary_shipping_fee, .cart_summary_subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_summary_subtotal {
+    color: var(--green-700);
+    font-size: 20px;
+}
+
+.cart_summary_button button {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-family: var(--tilt);
+    border-radius: 6px;
+    border: 1px solid var(--green-800);
+    background-color: var(--green-600);
+    color: var(--cream-100);
+    outline: none;
+    cursor: pointer;
+}
+
+.checkout {
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+}
+
+.empty_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.empty_cart p {
+    font-size: 30px;
+    font-family: var(--tilt);
+    color: var(--red-600);
+}

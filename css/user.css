@@ -1,0 +1,179 @@
+/* Poppins, Bellota  */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bukhari Script */
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+/* Harlow Solid Italic */
+@import url('https://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+/* Baybayin */
+@import url('https://fonts.cdnfonts.com/css/baybayin-tayo-handwriting-b30');
+
+/* Tilt Neon */
+@import url('https://fonts.cdnfonts.com/css/tilt-neon');
+
+:root {
+   --red-100: #fae8e8;
+   --red-200: #f0b9b9;
+   --red-300: #e68a8a;
+   --red-400: #dc5b5b;
+   --red-500: #d22d2d;
+   --red-600: #a42323;
+   --red-700: #751919;
+   --red-800: #460f0f;
+   --red-900: #170505;
+   --green-100: #f1f4ee;
+   --green-200: #d6ddcc;
+   --green-300: #bbc6aa;
+   --green-400: #a0af88;
+   --green-500: #859966;
+   --green-600: #67774f;
+   --green-700: #4a5539;
+   --green-800: #2c3322;
+   --green-900: #0f110b;
+   --cream-100: #fff5ea;
+   --cream-200: #ffd7aa;
+   --grey-100: #d4d4d4;
+   --grey-200: #b8b8b8;
+   --black: #31363F;
+   --blue: #4285f4;
+   --yellow: #f7c566;
+   --harlow: "Harlow Solid Italic", sans-serif;
+   --tilt: "Tilt Neon", sans-serif;
+   --poppins: "Poppins", sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.user_containter {
+    display: grid;
+    grid-template-areas: 
+        "sidebar content"
+    ;
+    grid-template-columns: 1fr 4fr ;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar_header {
+    padding: 10px 30px;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-family: var(--tilt);
+    font-size: 20px;
+}
+
+.sidebar_list {
+    padding: 20px 10px;
+}
+
+.sidebar_list li{
+    list-style: none;
+}
+
+.sidebar_list a {
+    text-decoration: none;
+    color: var(--black);
+    line-height: 40px;
+}
+
+.sidebar_links {
+    font-family: var(--tilt);
+}
+
+.profile, .my_orders, .address, .password {
+    font-size: 18px;
+    padding-left: 27px;
+}
+
+.content {
+    grid-area: content;
+    background-color: var(--cream-200);
+}
+
+.content header {
+    padding: 10px 28px;
+    font-family: var(--tilt);
+    font-size: 20px;
+    background-color: var(--green-600);
+    color: var(--green-100);
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.content_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.content_div {
+    display: flex;
+    width: 800px;
+    padding: 10px 0px;
+}
+
+.content_content p {
+    font-size: 18px;
+    font-family: var(--tilt);
+    padding-right: 20px ;
+}
+
+.content_button {
+    padding: 10px 0px;
+}
+
+.content_button button {
+    padding: 7px 18px;
+    cursor: pointer;
+    font-family: var(--tilt);
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--cream-100);
+    border-radius: 6px;
+}
+
+.edit {
+    background-color: var(--green-600);
+    border: 1px solid var(--green-800);
+    border-radius: 6px;
+    font-family: var(--tilt);
+    color: var(--cream-100);
+}
+
+.edituser {
+    font-size: 18px;
+    font-family: var(--tilt);
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    border-radius: 6px;
+    padding: 5px 30px;
+}
+
+.content_div input {
+    height: 35px;
+    padding: 0px 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--black);
+    font-family: var(--tilt);
+    font-size: 18px;
+    border-radius: 6px;
+}

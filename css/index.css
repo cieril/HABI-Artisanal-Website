@@ -1,0 +1,323 @@
+/* Poppins, Bellota  */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bukhari Script */
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+/* Harlow Solid Italic */
+@import url('https://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+/* Baybayin */
+@import url('https://fonts.cdnfonts.com/css/baybayin-tayo-handwriting-b30');
+
+/* Tilt Neon */
+@import url('https://fonts.cdnfonts.com/css/tilt-neon');
+
+:root {
+   --red-100: #fae8e8;
+   --red-200: #f0b9b9;
+   --red-300: #e68a8a;
+   --red-400: #dc5b5b;
+   --red-500: #d22d2d;
+   --red-600: #a42323;
+   --red-700: #751919;
+   --red-800: #460f0f;
+   --red-900: #170505;
+   --green-100: #f1f4ee;
+   --green-200: #d6ddcc;
+   --green-300: #bbc6aa;
+   --green-400: #a0af88;
+   --green-500: #859966;
+   --green-600: #67774f;
+   --green-700: #4a5539;
+   --green-800: #2c3322;
+   --green-900: #0f110b;
+   --cream-100: #fff5ea;
+   --cream-200: #ffd7aa;
+   --grey-100: #d4d4d4;
+   --grey-200: #b8b8b8;
+   --black: #31363F;
+   --blue: #4285f4;
+   --yellow: #f7c566;
+   --harlow: "Harlow Solid Italic", sans-serif;
+   --tilt: "Tilt Neon", sans-serif;
+   --poppins: "Poppins", sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+.hero {
+    position: relative;
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80dvh;
+    overflow: hidden;
+}
+
+.hero_contact {
+    position: relative;
+    background-image: url('../img/contact_banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80dvh;
+    overflow: hidden;
+}
+
+.gif1 {
+    position: absolute;
+    right: .5%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gif2 {
+    position: absolute;
+    right: 10%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    margin: 40px 40px;
+}
+
+.main_hr{
+    margin: 30px 0px;
+}
+
+.title {
+    font-family: var(--harlow);
+    font-size: 30px;
+    color: var(--black);
+}
+
+.card_recommended_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.card_recommended_container a{
+    text-decoration: none;    
+}
+
+.card_product_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.card_container {
+    transition: all ease 0.3s;
+    border-radius: 6px;
+    
+}
+
+.card_container:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card {
+    width: 200px;
+    background-color: #FFECD5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.recommended_card_divider {
+    text-align: center;
+    margin-top: 5px;
+    width: 200px;
+    font-family: var(--tilt);
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.card_wrapper {
+    margin-top: 5px;
+    width: 200px;
+    font-family: var(--tilt);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.card_wrapper .card_price {
+    font-size: 13px;
+    color: var(--green-600);
+}
+
+.card_name {
+    color: var(--black);
+    font-size: 19px;
+}
+
+.card_wrapper .heart {
+    color: var(--red-500);
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.card_wrapper .cart {
+    color: var(--red-500);
+    color: var(--green-700);
+    cursor: pointer;
+}
+
+.our_services {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: var(--cream-200);
+    padding: 15px 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.services_card {
+    display: flex;
+    align-items: center;
+    font-family: var(--tilt);
+    color: var(--black);
+}
+
+.services_card i {
+    font-size: 25px;
+    margin-right: 14px;
+}
+
+.services_card p {
+    font-size: 20px;
+}
+
+.our_story {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FFECD5;
+    border-radius: 20px;
+}
+
+.story_image {
+    width: 300%;
+}
+
+.story_image img {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    height: 420px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story_title {
+    text-align: center;
+    font-family: var(--harlow);
+    font-size: 30px;
+    width: 50%;
+}
+
+.story_content {
+    font-size: 20px;
+    font-family: var(--tilt);
+    word-break: break-word;
+}
+
+.story_button{
+    text-align: center;
+}
+
+.story_button button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+    background-color: var(--yellow);
+    font-family: var(--poppins);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.story_button a {
+    text-decoration: none;
+    color: var(--black)
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter label {
+    font-family: var(--tilt);
+    font-size: 16px;
+    color: var(--black);
+}
+
+.filter select {
+    border: 1px solid var(--yellow);
+    background-color: #FFECD5;
+    padding: 3px 0px;
+    border-radius: 6px;
+    font-family: var(--tilt);
+    font-size: 16px;
+    outline: none;
+    margin-left: 20px;
+    color: var(--black);
+}
+
+.filter option {
+    background-color: transparent;
+}
+
+.istock {
+    color: var(--green-600);
+}
+
+.ostock {
+    color: var(--red-500);
+}
+
+.small_nav {
+    padding: 0px 20px;
+    font-size: 18px;
+    font-family: var(--tilt);
+}
+
+.small_nav a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+

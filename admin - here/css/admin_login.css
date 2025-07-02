@@ -1,0 +1,315 @@
+/* Poppins, Bellota  */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bukhari Script */
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+/* Harlow Solid Italic */
+@import url('https://fonts.cdnfonts.com/css/harlow-solid-italic');
+
+/* Baybayin */
+@import url('https://fonts.cdnfonts.com/css/baybayin-tayo-handwriting-b30');
+
+/* Tilt Neon */
+@import url('https://fonts.cdnfonts.com/css/tilt-neon');
+
+:root {
+   --red-50:  #fdf3f3;
+   --red-100: #fde3e3;
+   --red-200: #fbcdcd;
+   --red-300: #f7aaaa;
+   --red-400: #f17878;
+   --red-500: #e64d4d; /* Main */
+   --red-600: #d22d2d;
+   --red-700: #b12424;
+   --red-800: #922222;
+   --red-900: #7a2222;
+   --red-950: #420d0d;
+   --green-50:  #f7f8ed;
+   --green-100: #ecefd8;
+   --green-200: #d9e1b5;
+   --green-300: #bfcd89;
+   --green-400: #a5b862; /* Main */
+   --green-500: #889d45;
+   --green-600: #697c34;
+   --green-700: #51602b;
+   --green-800: #424d27;
+   --green-900: #3a4324;
+   --green-950: #1d2310;
+   --cream-50:  #fff5ea; 
+   --cream-100: #ffecd5;
+   --cream-200: #fed4aa;
+   --cream-300: #fdb674;
+   --cream-400: #fb8c3c;
+   --cream-500: #f96c16;
+   --cream-600: #ea510c;
+   --cream-700: #c23b0c;
+   --cream-800: #9a3012;
+   --cream-900: #7c2a12;
+   --cream-950: #431207;
+   --grey-50:  #f7f7f7;
+   --grey-100: #ededed; /* Main */
+   --grey-200: #d4d4d4;
+   --grey-300: #c8c8c8;
+   --grey-400: #adadad;
+   --grey-500: #999999;
+   --grey-600: #888888;
+   --grey-700: #7b7b7b;
+   --grey-800: #676767;
+   --grey-900: #545454;
+   --grey-950: #363636;
+   --black: #23272e; 
+   --yellow-50:  #fef9ec;
+   --yellow-100: #fcecc9;
+   --yellow-200: #f9d88e;
+   --yellow-300: #f7c566; /* Main */
+   --yellow-400: #f4a62b;
+   --yellow-500: #ed8413;
+   --yellow-600: #d2600d;
+   --yellow-700: #ae420f;
+   --yellow-800: #8d3413;
+   --yellow-900: #742b13;
+   --yellow-950: #431405;
+   --harlow: "Harlow Solid Italic", sans-serif;
+   --tilt: "Tilt Neon", sans-serif;
+   --poppins: "Poppins", sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+   background-color: #F8F3E6;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100dvh;
+}
+
+.register-banner-wrapper {
+   display: flex;
+   align-items: center;
+   justify-self: center;
+   background-image: url(/img/girl_shopping_2.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 700px;
+   min-height: 100dvh;
+}
+/* 
+.login-banner-wrapper {
+   display: flex;
+   align-items: center;
+   justify-self: center;
+   background-image: url(/img/girl_shopping.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 500px;
+   min-height: 100dvh;
+} */
+
+.login-banner-wrapper img {
+   height: 500px;
+}
+
+.form-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 455px;
+   min-height: 100dvh;
+}
+
+.form-header {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form-header img {
+   height: 100px;
+}
+
+.form-header p {
+   font-family: var(--harlow);
+   font-size: 30px;
+   color: var(--black);
+   margin-top: 15px;
+}
+
+.form-inputs {
+   width: 400px;
+   margin-top: 15px;
+}
+
+.form-inputs label {
+   font-size: 18px;
+   font-family: var(--tilt);
+   color: var(--black);
+}
+
+.form-inputs input {
+   width: 100%;
+   height: 35px;
+   border-radius: 6px;
+   border: 1px solid var(--black);
+   outline: none;
+   padding: 0px 10px;
+   font-family: var(--poppins);
+   font-size: 14px;
+   margin-top: 5px;
+   background-color: transparent;
+}
+
+.form-options {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+   font-family: var(--tilt);
+}
+
+.form-options-checkbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.form-options-checkbox input {
+   border: var(--black);
+   margin-right: 5px;
+   accent-color: var(--yellow-300);
+   background-color: transparent;
+}
+
+.form-options-checkbox label {
+   color: var(--black);
+   font-size: 16px;
+}
+
+.form-options-forgotpass a {
+   color: var(--black);
+   font-size: 16px;
+   text-decoration: none;
+}
+
+.form-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 15px;
+}
+
+.form-button button {
+   width: 100%;
+   padding: 10px 0px;
+   font-size: 16px;
+   font-family: var(--tilt);
+   background-color: #56644C;
+   border-radius: 6px;
+   cursor: pointer;
+   border: none;
+   color: var(--cream-50);
+   transition: all 0.3s ease-in-out;
+}
+
+.form-button button:hover {
+   background-color: var(--green-500);
+}
+
+.form-button button:active {
+   background-color: var(--green-600);
+}
+
+.form-button a {
+   font-family: var(--tilt);
+   margin-top: 10px;
+   color: var(--black);
+   text-decoration: none;
+   font-size: 16px;
+}  
+
+.form-division {
+   position: relative;
+   margin-top: 15px;
+}
+
+.form-division hr {
+   border: 1px solid var(--black);
+}
+
+.form-division p {
+   position: absolute;
+   top: -11px;
+   left: 175px;
+   font-size: 16px;
+   font-family: var(--tilt);
+   background-color: var(--cream-50);
+   padding: 0px 10px;
+}
+
+.form-google {
+   margin-top: 15px;
+}
+
+.form-google button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 10px 0px;
+   font-family: var(--tilt);
+   font-size: 16px;
+   background-color: var(--grey-200);
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   color: var(--black);
+}
+
+.form-google button:hover {
+   background-color: var(--grey-300);
+}
+
+.form-google button img {
+   height: 20px;
+   margin-right: 10px;
+}
+
+.errors {
+   text-align: center;
+   margin: 15px 0px;
+   background-color: var(--red-800);
+   color: var(--cream-50);
+   font-family: var(--tilt);
+   font-size: 16px;
+   padding: 3px 0px;
+   border-radius: 6px;
+   display: none;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+   .login-banner-wrapper {
+      display: none;
+   }
+}
+
+/* Mobile - M */
+@media (max-width: 375px) {
+   .form-inputs {
+      width: 300px;
+   }
+
+   .form-division p {
+      left: 135px;;
+   }
+}
